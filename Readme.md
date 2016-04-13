@@ -1,7 +1,7 @@
 ﻿# Личный проект «Глейси»
 
 * Студент: [Денис Чигорин](https://up.htmlacademy.ru/htmlcss/13/user/176743).
-* Наставник: [Олег Зубов]. ( https://htmlacademy.ru/profile/id42701).
+* Наставник: [Олег Зубов]( https://htmlacademy.ru/profile/id42701).
 
 ---
 
