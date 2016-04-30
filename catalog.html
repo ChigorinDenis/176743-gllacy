@@ -8,8 +8,8 @@
   	<body>
   		<div class="main-container">
 			<header class="main-header">
-				<img src="http://placehold.it/50x20">
-				<nav class="header-navigation">
+				<a href="#"><img src="img/Logo.png" class="logo"></a>
+				<nav class="main-navigation">
 					<ul>
 						<li>
 							<a href="#" class="catalog-active">Каталог</a>
@@ -29,11 +29,12 @@
 				</div>	
 			</header>
 		</div>
-		<main class="main-container">
+		<main>
+			<div class="main-container clearfix">
 			<section class="main-mode">
-				<p>С 10 до 20, ежедневно <span>8 812 450 25 25</span></p>			
+				<p class="mode">С 10 до 20, ежедневно <span>8 812 450 25 25</span></p>			
 			</section>	
-			<nav class="main-navigation">
+			<nav class="breadcrums">
 				<ul>
 					<li>
 						<a href="#" class="catalog-active">Главная</a>
@@ -42,94 +43,98 @@
 						<a href="#">Каталог</a>
 					</li>
 					<li>
-						<p>О Компании</p>
+						<p>Сливочное</p>
 					</li>
 				</ul>
 			</nav>	
-			<h1>Сливочное мороженое</h1>
-			<section class="filter-container">
+			<b class="title-catalog">Сливочное мороженое</b>
+			<section class="filter-container clearfix">
 				<form action="URL">
-					<div class="filter-sorting">
-						<label for="sorting">Сортировка:</label>                      <!-- Добавлена пропущенная подпись Сортировка-->
-						<select name="sorting" id="sorting">
+				<div class="ft-label">
+					<span class="filter-lb filter-lb-sort">Сортировка:</span>
+					<span class="filter-lb  filter-lb-price">Цена:100руб.-500руб.</span>
+					<span class="filter-lb  filter-lb-fatness">Жирность:</span>
+				</div>	
+						<div class="filter-sorting">               
+						<select name="sorting" > 
  							<option value="1">по популярности</option>
- 						</select>	
-					</div>
+ 						</select> 
+						</div>	
 					<div class="filter-price">
-						<label for="price">Цена:100р.-500р.</label>
-						<input type="range" min="0" max="1000" step="5" id="price" name="price">	
-					</div>
+						<input type="range" min="0" max="1000" step="5" id="price" name="price"> 	
+					</div>				
 					<div class="filter-fatness">
-						<ul>
-							<li>
-								<input type="radio" name="fatness" id="fatness-first">
-								<label for="fatness-first">0%</label>
-							</li>
-							<li>
-								<input type="radio" name="fatness" id="fatness-second" checked>
-								<label for="fatness-second" >до 10%</label>
-							</li>
-							<li>
-								<input type="radio" name="fatness" id="fatness-third">
-								<label for="fatness-third">до 30%</label>
-							</li>
-							<li>
-								<input type="radio" name="fatness" id="fatness-fourth">
-								<label for="fatness-fourth">выше 30%</label>
-							</li>
-						</ul>
+					<ul>
+						<li>
+							<input type="radio" name="fatness" id="fatness-first">
+							<label for="fatness-first">0%</label>
+						</li>
+						<li>
+							<input type="radio" name="fatness" id="fatness-second" checked>
+							<label for="fatness-second">до 10%</label>
+						</li>
+						<li>
+							<input type="radio" name="fatness" id="fatness-third">
+							<label for="fatness-third">до 30%</label>
+						</li>
+						<li>
+							<input type="radio" name="fatness" id="fatness-fourth">
+							<label for="fatness-fourth">свыше 30%</label>
+						</li>
+					</ul>
 					</div>
-					<div class="filter-filler">
+					<span class="class-span">Наполнители:</span>
+					<div class="filter-filler clearfix">
 						<ul>
 							<li>
 								<input type="checkbox" name="filler" id="filler-first" checked>
-								<label for="fatness-first">шоколадные</label>
+								<label for="filler-first">шоколадные</label>
 							</li>
 							<li>
 								<input type="checkbox" name="filler" id="filler-second" checked>
-								<label for="fatness-second">сахарные присыпки</label>
+								<label for="filler-second">сахарные присыпки</label>
 							</li>
 							<li>
 								<input type="checkbox" name="filler" id="filler-third">
-								<label for="fatness-third">фрукты</label>
+								<label for="filler-third">фрукты</label>
 							</li>
 							<li>
 								<input type="checkbox" name="filler" id="filler-fourth">
-								<label for="fatness-fourth">сиропы</label>
+								<label for="filler-fourth">сиропы</label>
 							</li>
 							<li>
 								<input type="checkbox" name="filler" id="filler-fifth">
-								<label for="fatness-fifth">джемы</label>
+								<label for="filler-fifth">джемы</label>
 							</li>
 						</ul>
-						
+						  
 					</div>
-					<button type="submit" class="filter-btn">Применить</button>               <!--Замена на button-->
+					<button type="submit" class="filter-btn">Применить</button>             <!--Замена на button-->
 				</form>
 			</section>
 			<div class="item-block">
-				<article class="item item-ice-scream">  <!--Нумерация элементов убрана -->
+				<article class="item-ice-scream">  <!--Нумерация элементов убрана -->
 					<span>310P/<sup>кг</sup></span>
 					<figure>
 						<img src="img/icescream-1.png">
 						<figcaption><a href="#" class="hits-underline">Сливочное с апельсиновым джемом и цитрусовой стружкой</a></figcaption>
 					</figure>	
 				</article>
-				<article class="item item-ice-scream">
+				<article class="item-ice-scream">
 					<span>380P/<sup>кг</sup></span>            <!--мурдеж со sup исправлен) -->
 					<figure>
 						<img src="img/icescream-2.png">
 						<figcaption><a href="#" class="hits-underline">Сливочно-кофейное с кусочками шоколада</a></figcaption>
 				</figure>	
 				</article>
-				<article class="item item-ice-scream">
+				<article class="item-ice-scream">
 					<span>355P/<sup>кг</sup></span>
 					<figure>
 						<img src="img/icescream-3.png">
 						<figcaption><a href="#" class="hits-underline">Сливочно-клубничное с присыпкой из белого шоколада</a></figcaption>
 					</figure>	
 				</article>
-				<article class="item item-ice-scream">
+				<article class="item-ice-scream">
 					<span>415P/<sup>кг</sup></span>
 					<figure>
 						<img src="img/icescream-4.png">
@@ -137,28 +142,28 @@
 					</figure>	
 				</article>
 
-				<article class="item item-ice-scream">
+				<article class="item-ice-scream">
 					<span>325P/<sup>кг</sup></span>
 					<figure>
 						<img src="img/icescream-21.png">
 						<figcaption><a href="#" class="hits-underline">Сливочное с брусничным джемом</a></figcaption>
 					</figure>	
 				</article>
-				<article class="item item-ice-scream">
+				<article class="item-ice-scream">
 					<span>410P/<sup>кг</sup></span>
 					<figure>
 						<img src="img/icescream-22.png">
 						<figcaption><a href="#" class="hits-underline">Сливочно-черничное с цельными ягодами черники</a></figcaption>
 					</figure>	
 				</article>
-				<article class="item item-ice-scream">
+				<article class="item-ice-scream">
 					<span>375P/<sup>кг</sup></span>
 					<figure>
 						<img src="img/icescream-23.png">
 						<figcaption><a href="#" class="hits-underline">Сливочно-лимонное с карамельной присыпкой</a></figcaption>
 					</figure>	
 				</article>
-				<article class="item item-ice-scream">
+				<article class=" item-ice-scream">
 					<span>320P/<sup>кг</sup></span>
 					<figure>
 						<img src="img/icescream-24.png">
@@ -166,32 +171,32 @@
 					</figure>	
 				</article>
 
-				<article class="item item-ice-scream">
+				<article class="item-ice-scream">
 					<span>440P/<sup>кг</sup></span>
 					<figure>
 						<img src="img/icescream-31.png">
 						<figcaption><a href="#" class="hits-underline">Сливочно-ванильное с кусочками шоколада</a></figcaption>
 					</figure>	
 				</article>
-				<article class="item item-ice-scream">
+				<article class="item-ice-scream">
 					<span>435P/<sup>кг</sup></span>
 					<figure>
 						<img src="img/icescream-32.png">
 						<figcaption><a href="#" class="hits-underline">Сливочное с ментоловым сиропом</a></figcaption>
 					</figure>	
 				</article>
-				<article class="item item-ice-scream">
+				<article class="item-ice-scream">
 					<span>355P/<sup>кг</sup></span>
 					<figure>
 						<img src="img/icescream-33.png">
 						<figcaption><a href="#" class="hits-underline">Сливочное с кусочками черного шоколада</a></figcaption>
 					</figure>	
 				</article>
-				<article class="item item-ice-scream">
+				<article class="item-ice-scream">
 					<span>420P/<sup>кг</sup></span>
 					<figure>
 						<img src="img/icescream-34.png">
-						<figcaption><a href="#" class="hits-underline">Сливочное с мятным сиропом</a></figcaption>
+						<figcaption ><a href="#" class="hits-underline">Сливочное с мятным сиропом</a></figcaption>
 					</figure>	
 				</article>
 			</div>
@@ -201,14 +206,15 @@
 	            <a href="#">3</a>
 	            <a href="#">4</a>
 	            <a href="#">5</a>
-       		 </div>
+       		</div>
+       		</div> 
 		</main>
 		<footer class="main-footer">
 			<section class="footer-social">
-				<a class="social-btn social-btn-tw" href="#">Твиттер</a>
-				<a class="social-btn social-btn-inst" href="#">Инстаграм</a>	
-				<a class="social-btn social-btn-fb" href="#">Фейсбук</a>
-				<a class="social-btn social-btn-vk" href="#">Вконтакте</a>
+				<a class="social-btn social-btn-tw" href="#">Тв</a>
+				<a class="social-btn social-btn-inst" href="#">Ин</a>	
+				<a class="social-btn social-btn-fb" href="#">Фб</a>
+				<a class="social-btn social-btn-vk" href="#">Вк</a>
 			</section>
 			<section class="footer-doc">
 				<ul class="doc-left">
