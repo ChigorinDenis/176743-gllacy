@@ -4,11 +4,14 @@
     	<meta charset="utf-8">
     	<title>HTML Academy: HTML Academy: Глейси каталог</title>
     	<link href="css/style.css" rel="stylesheet">
+    	<link href='https://fonts.googleapis.com/css?family=Roboto:400,500,700&subset=cyrillic' rel='stylesheet' type='text/css'>
  	</head>
   	<body>
+  		<div class="page-border">
+  		<a href="#"><img src="img/Logo.png" class="logo" width="154" height="64"></a> 
   		<div class="main-container">
-			<header class="main-header">
-				<a href="#"><img src="img/Logo.png" class="logo"></a>
+			<header class="main-header clearfix">
+				
 				<nav class="main-navigation">
 					<ul>
 						<li>
@@ -23,21 +26,21 @@
 					</ul>
 				</nav>
 				<div class="user-block">
-					<a href="#" class="search">Поиск</a>
-					<a href="#" class="enter">Вход</a>
-					<a href="#" class="basket">2 товара</a>			
+					<a href="#" class="user-sprite-cat search"></a>
+					<a href="#" class="user-sprite-cat enter">Вход</a>
+					<a href="#" class="user-sprite-cat basket-full">2 товара</a>			
 				</div>	
 			</header>
 		</div>
 		<main>
 			<div class="main-container clearfix">
 			<section class="main-mode">
-				<p class="mode">С 10 до 20, ежедневно <span>8 812 450 25 25</span></p>			
+				<p class="mode-num">С 10 до 20, ежедневно <span>8 812 450-25-25</span></p>			
 			</section>	
 			<nav class="breadcrums">
 				<ul>
 					<li>
-						<a href="#" class="catalog-active">Главная</a>
+						<a href="#">Главная</a>
 					</li>
 					<li>
 						<a href="#">Каталог</a>
@@ -61,25 +64,40 @@
  						</select> 
 						</div>	
 					<div class="filter-price">
-						<input type="range" min="0" max="1000" step="5" id="price" name="price"> 	
+						<div class="scale">
+							<div class="scale-bar">
+							</div>	
+						</div>
 					</div>				
 					<div class="filter-fatness">
 					<ul>
 						<li>
-							<input type="radio" name="fatness" id="fatness-first">
-							<label for="fatness-first">0%</label>
+							<label  class="radio-label" for="fatness-first">
+								<input type="radio" name="fatness"  id="fatness-first">
+								<span class="radio-indicator"></span>
+								0%
+							</label>
 						</li>
 						<li>
-							<input type="radio" name="fatness" id="fatness-second" checked>
-							<label for="fatness-second">до 10%</label>
+							<label class="radio-label" for="fatness-second">
+								<input type="radio" name="fatness" id="fatness-second" >
+								<span class="radio-indicator"></span>
+								до 10%
+							</label>
 						</li>
 						<li>
-							<input type="radio" name="fatness" id="fatness-third">
-							<label for="fatness-third">до 30%</label>
+							<label class="radio-label" for="fatness-third">
+								<input type="radio" name="fatness" id="fatness-third">
+								<span class="radio-indicator"></span>
+								до 30%
+							</label>
 						</li>
 						<li>
-							<input type="radio" name="fatness" id="fatness-fourth">
-							<label for="fatness-fourth">свыше 30%</label>
+							<label class="radio-label" for="fatness-fourth">
+								<input type="radio" name="fatness" id="fatness-fourth">
+								<span class="radio-indicator"></span>
+								выше 30%
+							</label>
 						</li>
 					</ul>
 					</div>
@@ -87,24 +105,39 @@
 					<div class="filter-filler clearfix">
 						<ul>
 							<li>
-								<input type="checkbox" name="filler" id="filler-first" checked>
-								<label for="filler-first">шоколадные</label>
+								<label class="filler-checkbox" for="filler-first">
+									<input type="checkbox" name="filler" id="filler-first">
+									<span class="checkbox-indicator"></span>
+									шоколадные
+								</label>
 							</li>
 							<li>
-								<input type="checkbox" name="filler" id="filler-second" checked>
-								<label for="filler-second">сахарные присыпки</label>
+								<label class="filler-checkbox" for="filler-second">
+									<input type="checkbox" name="filler" id="filler-second">
+									<span class="checkbox-indicator"></span>
+									сахарные присыпки
+								</label>
 							</li>
 							<li>
-								<input type="checkbox" name="filler" id="filler-third">
-								<label for="filler-third">фрукты</label>
+								<label class="filler-checkbox" for="filler-third">
+									<input type="checkbox" name="filler" id="filler-third">
+									<span class="checkbox-indicator"></span>
+									фрукты
+								</label>
 							</li>
 							<li>
-								<input type="checkbox" name="filler" id="filler-fourth">
-								<label for="filler-fourth">сиропы</label>
+								<label class="filler-checkbox" for="filler-fourth">
+									<input type="checkbox" name="filler" id="filler-fourth">
+									<span class="checkbox-indicator"></span>
+									сиропы
+								</label>
 							</li>
 							<li>
-								<input type="checkbox" name="filler" id="filler-fifth">
-								<label for="filler-fifth">джемы</label>
+								<label class="filler-checkbox" for="filler-fifth">
+									<input type="checkbox" name="filler" id="filler-fifth">
+									<span class="checkbox-indicator"></span>
+									джемы
+								</label>
 							</li>
 						</ul>
 						  
@@ -114,28 +147,28 @@
 			</section>
 			<div class="item-block">
 				<article class="item-ice-scream">  <!--Нумерация элементов убрана -->
-					<span>310P/<sup>кг</sup></span>
+					<span class="item-price">310 &#8381;<span class="sub-class">/кг</span></span>
 					<figure>
 						<img src="img/icescream-1.png">
 						<figcaption><a href="#" class="hits-underline">Сливочное с апельсиновым джемом и цитрусовой стружкой</a></figcaption>
 					</figure>	
 				</article>
 				<article class="item-ice-scream">
-					<span>380P/<sup>кг</sup></span>            <!--мурдеж со sup исправлен) -->
+					<span class="item-price">380 &#8381;<span class="sub-class">/кг</span></span>            <!--мурдеж со sup исправлен) -->
 					<figure>
 						<img src="img/icescream-2.png">
 						<figcaption><a href="#" class="hits-underline">Сливочно-кофейное с кусочками шоколада</a></figcaption>
 				</figure>	
 				</article>
 				<article class="item-ice-scream">
-					<span>355P/<sup>кг</sup></span>
+					<span class="item-price">355 &#8381;<span class="sub-class">/кг</span></span>
 					<figure>
 						<img src="img/icescream-3.png">
 						<figcaption><a href="#" class="hits-underline">Сливочно-клубничное с присыпкой из белого шоколада</a></figcaption>
 					</figure>	
 				</article>
 				<article class="item-ice-scream">
-					<span>415P/<sup>кг</sup></span>
+					<span class="item-price">415 &#8381;<span class="sub-class">/кг</span></span>
 					<figure>
 						<img src="img/icescream-4.png">
 						<figcaption><a href="#" class="hits-underline">Сливочное с крем-брюле с карамельной подливкой</a></figcaption>
@@ -143,28 +176,28 @@
 				</article>
 
 				<article class="item-ice-scream">
-					<span>325P/<sup>кг</sup></span>
+					<span class="item-price">325 &#8381;<span class="sub-class">/кг</span></span>
 					<figure>
 						<img src="img/icescream-21.png">
-						<figcaption><a href="#" class="hits-underline">Сливочное с брусничным джемом</a></figcaption>
+						<figcaption><a href="#" class="hits-underline">Сливочное с брусничным <br>джемом</a></figcaption>
 					</figure>	
 				</article>
 				<article class="item-ice-scream">
-					<span>410P/<sup>кг</sup></span>
+					<span class="item-price">410 &#8381;<span class="sub-class">/кг</span></span>
 					<figure>
 						<img src="img/icescream-22.png">
 						<figcaption><a href="#" class="hits-underline">Сливочно-черничное с цельными ягодами черники</a></figcaption>
 					</figure>	
 				</article>
 				<article class="item-ice-scream">
-					<span>375P/<sup>кг</sup></span>
+					<span class="item-price">375 &#8381;<span class="sub-class">/кг</span></span>
 					<figure>
 						<img src="img/icescream-23.png">
 						<figcaption><a href="#" class="hits-underline">Сливочно-лимонное с карамельной присыпкой</a></figcaption>
 					</figure>	
 				</article>
 				<article class=" item-ice-scream">
-					<span>320P/<sup>кг</sup></span>
+					<span class="item-price">320 &#8381;<span class="sub-class">/кг</span></span>
 					<figure>
 						<img src="img/icescream-24.png">
 						<figcaption><a href="#" class="hits-underline">Сливочное с шоколадной стружкой</a></figcaption>
@@ -172,28 +205,28 @@
 				</article>
 
 				<article class="item-ice-scream">
-					<span>440P/<sup>кг</sup></span>
+					<span class="item-price">440 &#8381;<span class="sub-class">/кг</span></span>
 					<figure>
 						<img src="img/icescream-31.png">
-						<figcaption><a href="#" class="hits-underline">Сливочно-ванильное с кусочками шоколада</a></figcaption>
+						<figcaption><a href="#" class="hits-underline">Сливочно-ванильное с <br>кусочками шоколада</a></figcaption>
 					</figure>	
 				</article>
 				<article class="item-ice-scream">
-					<span>435P/<sup>кг</sup></span>
+					<span class="item-price">435 &#8381;<span class="sub-class">/кг</span></span>
 					<figure>
 						<img src="img/icescream-32.png">
-						<figcaption><a href="#" class="hits-underline">Сливочное с ментоловым сиропом</a></figcaption>
+						<figcaption><a href="#" class="hits-underline">Сливочное с ментоловым<br>сиропом</a></figcaption>
 					</figure>	
 				</article>
 				<article class="item-ice-scream">
-					<span>355P/<sup>кг</sup></span>
+					<span class="item-price">355 &#8381;<span class="sub-class">/кг</span></span>
 					<figure>
 						<img src="img/icescream-33.png">
 						<figcaption><a href="#" class="hits-underline">Сливочное с кусочками черного шоколада</a></figcaption>
 					</figure>	
 				</article>
 				<article class="item-ice-scream">
-					<span>420P/<sup>кг</sup></span>
+					<span class="item-price">420 &#8381;<span class="sub-class">/кг</span></span>
 					<figure>
 						<img src="img/icescream-34.png">
 						<figcaption ><a href="#" class="hits-underline">Сливочное с мятным сиропом</a></figcaption>
@@ -207,9 +240,11 @@
 	            <a href="#">4</a>
 	            <a href="#">5</a>
        		</div>
-       		</div> 
+       		</div>
+
 		</main>
-		<footer class="main-footer">
+		</div>
+		<footer class="main-footer footer-line clearfix">
 			<section class="footer-social">
 				<a class="social-btn social-btn-tw" href="#">Тв</a>
 				<a class="social-btn social-btn-inst" href="#">Ин</a>	

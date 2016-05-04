@@ -4,16 +4,17 @@
 		<meta charset="utf-8">
 		<title>HTML Academy: Глейси</title>
 		<link href="css/style.css" rel="stylesheet">
+		<link href='https://fonts.googleapis.com/css?family=Roboto:400,500,700&subset=cyrillic' rel='stylesheet' type='text/css'>
 	</head>
 	<body>
-
+		<div class="page-border">
+		<a href="#"><img src="img/Logo.png" class="logo" width="154" height="64"></a> 
 		 <div class="main-container ">
 			<header class="main-header clearfix ">
-				<a href="#"><img src="img/Logo.png" class="logo"></a> 
 				<nav class="main-navigation">
-				<ul>
+					<ul>
 						<li>
-							<a href="#">Каталог</a>
+							<a href="catalog.html">Каталог</a>
 						</li>
 						<li>
 							<a href="#">Доставка и оплата</a>
@@ -24,9 +25,9 @@
 					</ul>  
 				</nav>
 				<div class="user-block">
-					<a href="#" class="search">П</a>
-					<a href="#" class="enter">Вход</a>
-					<a href="#" class="basket">Пусто</a> 			
+					<a href="#" class="user-sprite search"></a>
+					<a href="#" class="user-sprite enter">Вход</a>
+					<a href="#" class="user-sprite basket">Пусто</a> 			
 				</div>	
 
 			</header>
@@ -34,7 +35,7 @@
 		<main>
 			<div class="main-container clearfix">
 			<section class="main-mode ">
-				<p class="mode">С 10 до 20, ежедневно <span>8 812 450 25 25</span></p>			
+				<p class="mode-num">С 10 до 20, ежедневно <span>8 812 450-25-25</span></p>			
 			</section>	
 			<div class="two-ice-scream clearfix">
 				<h1>Крем-брюле и пломбир<span class="correct">
@@ -48,7 +49,7 @@
 				<div class="two-ice-scream-btn ">
 					<a href="#">Давайте оба!</a>			
 				</div>			
-				<article class="banner raspberries">                                              
+				<article class="banner raspberries clearfix">                                              
 					<h2>Малинка даром!</h2> 
 					<p class="mode">При покупке 2 кг любого фруктового 
 					   мороженного, добавим в ваш заказ банку
@@ -56,39 +57,39 @@
 					</p>
 					<a href="#" class="giveme-btn">Хочу варенье!</a>    <!-- Один класс на две кнопки добавлен-->
 				</article>
-				<article class="banner chocolate">                   
+				<article class="banner chocolate clearfix">                   
 					<h2>Шоколадки даром!</h2> 
 					<p class="mode">При покупке 2 кг пломбира, добавим в ваша
 					   заказ упаковку вкуслейшей шоколадной
 					   присыпки абсолютно бесплатно
 					</p>
-					<a href="#" class="giveme-btn">Хочу варенье!</a>   <!-- Один класс на две кнопки добавлен-->
+					<a href="#" class="giveme-btn">Хочу шоколадки!</a>   <!-- Один класс на две кнопки добавлен-->
 				</article>
 			</div> 
 			<div class="hits-block clearfix">
 				<article class="hits-ice-scream">
-					<span>310&#8381;/<sup>кг</sup></span>                       <!-- мудреж с sup исправлен-->
+					<span class="ice-price">310 &#8381;<span class="sub-class">/кг</span></span>                       <!-- мудреж с sup исправлен-->
 					<figure>
 						<img src="img/icescream-1.png" alt="Сливочное с апельсиновым джемом" width="267" height="267">
 						<figcaption><a href="#" class="hits-underline">Сливочное с апельсиновым <span>джемом и цитрусовой стружкой</span></a></figcaption>
 					</figure>	
 				</article>
 				<article class="hits-ice-scream">  <!-- Нумерация классов убрана -->
-					<span>380&#8381;/<sup>кг</sup></span>
+					<span class="ice-price">380 &#8381;<span class="sub-class">/кг</span></span>
 					<figure>
 						<img src="img/icescream-2.png" alt="Сливочно-кофейное" width="267" height="267">
 						<figcaption><a href="#" class="hits-underline">Сливочно-кофейное с кусочками<span> шоколада</span></a></figcaption>
 					</figure>	
 				</article>
 				<article class="hits-ice-scream">
-					<span>355&#8381;/<sup>кг</sup></span>
+					<span class="ice-price">355 &#8381;<span class="sub-class">/кг</span></span>
 					<figure>
 						<img src="img/icescream-3.png" alt="Сливочно-клубничное" width="267" height="267">
 						<figcaption><a href="#" class="hits-underline">Сливочно-клубничное с <span>присыпкой из белого шоколада</span></a></figcaption>
 					</figure>	
 				</article>
 				<article class="hits-ice-scream hits-right">
-					<span>415&#8381;/<sup>кг</sup></span>
+					<span class="ice-price">415 &#8381;<span class="sub-class">/кг</span></span>
 					<figure>
 						<img src="img/icescream-4.png" alt="Сливочное с крем-брюле" width="267" height="267">
 						<figcaption><a href="#" class="hits-underline">Сливочное с крем-брюле <span>с карамельной подливкой</span></a></figcaption>
@@ -141,8 +142,8 @@
 						   и будете всегда в курсе всего самого вкусного,
 						   что у нас происходит. Обещаем не спамить и не
 						   слать всякой не нужной ерунды. Честно=)</p>
-						<input type="text" name="subs-mail" placeholder="Электронная почта">
-						<input type="submit" name="subs-btn" value="Отправить">
+						<input type="text" name="subs-mail" class="subs-mail" placeholder="Электронная почта">
+						<input type="submit" name="subs-btn" class="subs-btn" value="Отправить">
 					</form>	
 				</article>		
 			</div>
@@ -187,5 +188,6 @@
 				<p>Сделано в <a href="#">HTML Academy</a> &copy; 2016</p>  <!-- символы мнемоники написаны верно-->
 			</section>
 		</footer>
+		<div>
   	</body>
 </html>
