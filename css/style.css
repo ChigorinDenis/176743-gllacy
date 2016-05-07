@@ -52,6 +52,7 @@ body {
 }
 
 .main-container{
+	position: relative;
 	
  	margin:0 auto;
 	width:1146px;
@@ -89,6 +90,7 @@ body {
 	margin-top: 24px;
 }
 .main-navigation  a{
+	
 	display: block;
 	padding-left:13px;
 	padding-right: 13px;
@@ -100,8 +102,11 @@ body {
 	font-style: Roboto Bold;
 	font-weight: bold;
 	color:#fefefe;
-	text-decoration: none;	
+
+	text-decoration-line: solid;
+	text-decoration-color: #b2cabd;  
 }
+
 .main-navigation li {
 	display:inline-block;
 	margin-left: 11px;
@@ -116,6 +121,7 @@ body {
 .main-navigation a:hover{
 	background: #ffffff;
 	color:#000000;
+	text-decoration: none;
 }	
 .main-navigtion a:active{
 	background: #ffffff;
@@ -419,7 +425,7 @@ figcaption {
 	font-style: Roboto Black;
 	font-weight: bold;
 	color:#ffffff;
-	text-shadow:0 0px 5px #000000;
+	text-shadow:0 0px 5px rgba(50, 50, 50, .5);
 }
 .sub-class{
 	font-size: 28px;
@@ -611,6 +617,7 @@ figcaption {
 	margin-right: auto;
 	margin-top: 0px;
 	padding-top: 0px;
+	margin-bottom: 20px;
 
 }
 .footer-social{
@@ -701,6 +708,8 @@ li {
 	font-style: Roboto Bold;
 	font-weight: bold;
 	text-decoration: none;
+	text-decoration: underline;
+	text-decoration-color: #b2cabd;
 	color:#fefefe; 	
 }
 .doc-right a {
@@ -709,6 +718,8 @@ li {
 	font-style: Roboto Bold;
 	font-weight: bold;
 	text-decoration: none;
+	text-decoration: underline;
+	text-decoration-color: #b2cabd;
 	color:#fefefe; 	
 }
 .main-footer{
@@ -722,6 +733,7 @@ li {
 	background: url("../img/htmlacademy-logo.svg") no-repeat 0 0;
 	margin-top:22px;
 	padding-top: 30px;
+	margin-bottom:15px;
 }
 
 .footer-copyright p {
@@ -756,6 +768,11 @@ li {
     height: 20px;
     background-position: -5px -5px;
 }
+.basket-full:hover{
+	background: #ffffff;
+	color:#000000;
+
+}
 .item-price{
 	position: absolute;
 	top:233px;
@@ -763,7 +780,7 @@ li {
 	font-style: Roboto Black;
 	font-weight: bold;
 	color:#ffffff;
-	text-shadow:0 0px 5px #000000;
+	text-shadow:0 0px 5px rgba(50, 50, 50, .5);
 }
 .breadcrums {
 	width:240px;
@@ -993,7 +1010,6 @@ li {
 	top:255px;
 	left: 390px;
 	font-size:14px;
-	
 	font-style: Roboto Medium;
 	color:#ffffff;	
 	vertical-align: top;
@@ -1006,13 +1022,11 @@ li {
 	margin-right: 0px;
 	margin-top: 40px;
 	width: 143px;
-	font-size: 13px;
+	font-size: 16px;
 	line-height: 18px;
 	font-style: Roboto Medium;
-	font-weight: bold;
 	padding-top: 9px;
 	padding-bottom: 9px;
-
 	vertical-align: top;
 	border-style:none;
 	border-radius: 30px;
@@ -1167,11 +1181,78 @@ opacity: 0;
 }
 .catalog-active{
 	background: #d07058;
+	text-decoration: none;
 }
+.catalog-active:hover{
+	background: #d07058;
+	text-decoration: none;
+}
+
 .footer-line{
 	border-top:1px solid #ffffff;
 }
 .user-sprite-cat::before{
 	background-image: url("../img/spritesheet1.png");
     background-repeat: no-repeat;   
+}
+
+/* стилизация скрытых слоев*/
+.form-enter{
+	position: absolute;
+	padding-top: 20px;
+	padding-left: 20px;
+	top:-13px;
+	left:725px;
+	width: 278px;
+	background: #f8f7f4;
+	border-radius: 8px;
+	box-shadow: 0 5px 40px 0 #000000;
+	opacity: 0;
+	
+}
+.form-enter span{
+	float:right;
+	width:128px;
+	margin-right: 20px;
+	margin-left: 0;
+}
+.form-enter a{
+	font-size: 13px;
+	line-height: 24px;
+	color:#000000;
+
+}
+.form-field {
+	width:238px;
+	font-size: 14px;
+	font-weight: 24px;
+	padding-top:11px;
+	padding-bottom: 13px;
+	padding-left: 14px;
+	margin-top:0;
+	margin-bottom: 20px;
+	border-radius: 5px;
+	border:1px solid #d3d3d2;
+	
+}
+.form-btn{
+	float: left;
+	margin-right: 0;
+	margin-left: 0px;
+	margin-bottom: 20px;
+	width:100px;
+	height: 44px;
+	border-radius: 20px;
+	border-style: none;
+	background-image: linear-gradient(#f26843,#e74b36);
+	font-size: 18px;
+	font-weight: bold;
+	color:#ffffff;
+	box-shadow: 0 1px 5px 0 #ac1000;
+}
+.enter:focus ~ .form-enter,
+.enter:active ~ .form-enter,
+.enter:hover{
+	opacity: 1;
+
 }
