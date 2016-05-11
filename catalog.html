@@ -8,7 +8,7 @@
  	</head>
   	<body>
   		<div class="page-border">
-  		<a href="#"><img src="img/Logo.png" class="logo" width="154" height="64"></a> 
+  		<a href="index.html"><img src="img/Logo.png" class="logo" width="154" height="64"></a> 
   		<div class="main-container">
 			<header class="main-header clearfix">
 				
@@ -17,10 +17,10 @@
 						<li>
 							<a href="#" class="catalog-active">Каталог</a>
 						</li>
-						<li>
+						<li class="nav-delivery">
 							<a href="#">Доставка и оплата</a>
 						</li>
-						<li>
+						<li class="nav-company">
 							<a href="#">О Компании</a>
 						</li>
 					</ul>
@@ -33,18 +33,20 @@
 			</header>
 		</div>
 		<main>
-			<div class="main-container clearfix">
+			<div class="main-container main-underline clearfix">
 			<section class="main-mode">
 				<p class="mode-num">С 10 до 20, ежедневно <span>8 812 450-25-25</span></p>			
 			</section>	
 			<nav class="breadcrums">
 				<ul>
 					<li>
-						<a href="#">Главная</a>
+						<a href="index.html">Главная</a>
 					</li>
+					<li>&raquo;</li>
 					<li>
 						<a href="#">Каталог</a>
 					</li>
+					<li>&raquo;</li>
 					<li>
 						<p>Сливочное</p>
 					</li>
@@ -55,12 +57,15 @@
 				<form action="URL">
 				<div class="ft-label">
 					<span class="filter-lb filter-lb-sort">Сортировка:</span>
-					<span class="filter-lb  filter-lb-price">Цена:100руб.-500руб.</span>
+					<span class="filter-lb  filter-lb-price">Цена:100руб.- 500руб.</span>
 					<span class="filter-lb  filter-lb-fatness">Жирность:</span>
 				</div>	
 						<div class="filter-sorting">               
 						<select name="sorting" > 
  							<option value="1">по популярности</option>
+ 							<option value="2">сначала недорогие</option>
+ 							<option value="3">сначала дорогие</option>
+ 							<option value="4">по жирности</option>
  						</select> 
 						</div>	
 					<div class="filter-price">
@@ -147,103 +152,156 @@
 			</section>
 			<div class="item-block">
 				<article class="item-ice-scream">  <!--Нумерация элементов убрана -->
-					<span class="item-price">310 &#8381;<span class="sub-class">/кг</span></span>
+					
 					<figure>
+					<span class="item-price">310 &#8381;<span class="sub-class">/кг</span></span>
 						<img src="img/icescream-1.png">
 						<figcaption><a href="#" class="hits-underline">Сливочное с апельсиновым джемом и цитрусовой стружкой</a></figcaption>
+
+						<div class="invisible-bgd">	
+						<a class="invisible-btn" href="#">Быстрый просмотр</a>
+						</div>
 					</figure>	
+
+					
 				</article>
 				<article class="item-ice-scream">
-					<span class="item-price">380 &#8381;<span class="sub-class">/кг</span></span>            <!--мурдеж со sup исправлен) -->
+					         <!--мурдеж со sup исправлен) -->
 					<figure>
+					<span class="item-price">380 &#8381;<span class="sub-class">/кг</span></span>   
 						<img src="img/icescream-2.png">
 						<figcaption><a href="#" class="hits-underline">Сливочно-кофейное с кусочками шоколада</a></figcaption>
+						<div class="invisible-bgd">	
+						<a class="invisible-btn" href="#">Быстрый просмотр</a>
+						</div>
 				</figure>	
 				</article>
 				<article class="item-ice-scream">
-					<span class="item-price">355 &#8381;<span class="sub-class">/кг</span></span>
+					
 					<figure>
+					<span class="item-price">355 &#8381;<span class="sub-class">/кг</span></span>
 						<img src="img/icescream-3.png">
 						<figcaption><a href="#" class="hits-underline">Сливочно-клубничное с присыпкой из белого шоколада</a></figcaption>
+						<div class="invisible-bgd">	
+						<a class="invisible-btn" href="#">Быстрый просмотр</a>
+						</div>
 					</figure>	
 				</article>
 				<article class="item-ice-scream">
-					<span class="item-price">415 &#8381;<span class="sub-class">/кг</span></span>
+					
 					<figure>
+					<span class="item-price">415 &#8381;<span class="sub-class">/кг</span></span>
 						<img src="img/icescream-4.png">
 						<figcaption><a href="#" class="hits-underline">Сливочное с крем-брюле с карамельной подливкой</a></figcaption>
+						<div class="invisible-bgd">	
+						<a class="invisible-btn" href="#">Быстрый просмотр</a>
+						</div>
 					</figure>	
 				</article>
 
 				<article class="item-ice-scream">
-					<span class="item-price">325 &#8381;<span class="sub-class">/кг</span></span>
+					
 					<figure>
+					<span class="item-price">325 &#8381;<span class="sub-class">/кг</span></span>
 						<img src="img/icescream-21.png">
 						<figcaption><a href="#" class="hits-underline">Сливочное с брусничным <br>джемом</a></figcaption>
+						<div class="invisible-bgd">	
+						<a class="invisible-btn" href="#">Быстрый просмотр</a>
+						</div>
 					</figure>	
 				</article>
 				<article class="item-ice-scream">
-					<span class="item-price">410 &#8381;<span class="sub-class">/кг</span></span>
+					
 					<figure>
+					<span class="item-price">410 &#8381;<span class="sub-class">/кг</span></span>
 						<img src="img/icescream-22.png">
 						<figcaption><a href="#" class="hits-underline">Сливочно-черничное с цельными ягодами черники</a></figcaption>
+						<div class="invisible-bgd">	
+						<a class="invisible-btn" href="#">Быстрый просмотр</a>
+						</div>
 					</figure>	
 				</article>
 				<article class="item-ice-scream">
-					<span class="item-price">375 &#8381;<span class="sub-class">/кг</span></span>
+					
 					<figure>
+					<span class="item-price">375 &#8381;<span class="sub-class">/кг</span></span>
 						<img src="img/icescream-23.png">
 						<figcaption><a href="#" class="hits-underline">Сливочно-лимонное с карамельной присыпкой</a></figcaption>
+						<div class="invisible-bgd">	
+						<a class="invisible-btn" href="#">Быстрый просмотр</a>
+						</div>
 					</figure>	
 				</article>
 				<article class=" item-ice-scream">
-					<span class="item-price">320 &#8381;<span class="sub-class">/кг</span></span>
+					
 					<figure>
+					<span class="item-price">320 &#8381;<span class="sub-class">/кг</span></span>
 						<img src="img/icescream-24.png">
 						<figcaption><a href="#" class="hits-underline">Сливочное с шоколадной стружкой</a></figcaption>
+						<div class="invisible-bgd">	
+						<a class="invisible-btn" href="#">Быстрый просмотр</a>
+						</div>
 					</figure>	
 				</article>
 
 				<article class="item-ice-scream">
-					<span class="item-price">440 &#8381;<span class="sub-class">/кг</span></span>
+					
 					<figure>
+					<span class="item-price">440 &#8381;<span class="sub-class">/кг</span></span>
 						<img src="img/icescream-31.png">
 						<figcaption><a href="#" class="hits-underline">Сливочно-ванильное с <br>кусочками шоколада</a></figcaption>
+						<div class="invisible-bgd">	
+						<a class="invisible-btn" href="#">Быстрый просмотр</a>
+						</div>
 					</figure>	
 				</article>
 				<article class="item-ice-scream">
-					<span class="item-price">435 &#8381;<span class="sub-class">/кг</span></span>
+					
 					<figure>
+					<span class="item-price">435 &#8381;<span class="sub-class">/кг</span></span>
 						<img src="img/icescream-32.png">
 						<figcaption><a href="#" class="hits-underline">Сливочное с ментоловым<br>сиропом</a></figcaption>
+						<div class="invisible-bgd">	
+						<a class="invisible-btn" href="#">Быстрый просмотр</a>
+						</div>
 					</figure>	
 				</article>
 				<article class="item-ice-scream">
-					<span class="item-price">355 &#8381;<span class="sub-class">/кг</span></span>
+					
 					<figure>
+					<span class="item-price">355 &#8381;<span class="sub-class">/кг</span></span>
 						<img src="img/icescream-33.png">
 						<figcaption><a href="#" class="hits-underline">Сливочное с кусочками черного шоколада</a></figcaption>
+						<div class="invisible-bgd">	
+						<a class="invisible-btn" href="#">Быстрый просмотр</a>
+						</div>
 					</figure>	
 				</article>
 				<article class="item-ice-scream">
-					<span class="item-price">420 &#8381;<span class="sub-class">/кг</span></span>
+					
 					<figure>
+					<span class="item-price">420 &#8381;<span class="sub-class">/кг</span></span>
 						<img src="img/icescream-34.png">
 						<figcaption ><a href="#" class="hits-underline">Сливочное с мятным сиропом</a></figcaption>
+						<div class="invisible-bgd">	
+						<a class="invisible-btn" href="#">Быстрый просмотр</a>
+						</div>
 					</figure>	
 				</article>
 			</div>
 			<div class="paginator">
+				<span class="privious"></span>
 				<a href="#" class="active">1</a>
 	            <a href="#">2</a>
 	            <a href="#">3</a>
 	            <a href="#">4</a>
 	            <a href="#">5</a>
+	            <span class="next"></span>
        		</div>
        		</div>
 
 		</main>
-		</div>
+		
 		<footer class="main-footer footer-line clearfix">
 			<section class="footer-social">
 				<a class="social-btn social-btn-tw" href="#">Тв</a>
@@ -253,8 +311,8 @@
 			</section>
 			<section class="footer-doc">
 				<ul class="doc-left">
-					<li><a href="#">Для поставщиков</a></li>
-					<li><a href="#">О произодстве</a></li>
+					<li><a class="doc-left-bold" href="#">Для поставщиков</a></li>
+					<li><a class="doc-left-normal" href="#">О произодстве</a></li>
 				</ul>
 				<ul class="doc-right">
 					<li><a href="#">Наши документы</a></li>
@@ -262,10 +320,30 @@
 				</ul>	
 			</section>
 			<section class="footer-copyright">
-				<p>Сделано в <a href="#">HTML Academy</a> &copy; 2016</p>   <!-- символы мнемоники написаны верно-->
+				<p>Сделано в <a href="#">HTML Academy</a> &copy; 2016</p>  
 			</section>
-		</footer>
-
-  	
+		</footer>	
+		<div class="basket-window clearfix">
+			<form action="URL">
+				<table class="basket-table">
+					<tr>
+						<td class="delete-item"></td>
+						<td><img src="img/basket-icescream-1.png" width="33" height="33"></td>
+						<td><a href="#">Пломбир с апельсиновым джемом</a></td>
+						<td>1,5 кг x <span>200 руб.</span></td>
+						<td>300 руб.</td>
+					</tr>
+					<tr>
+						<td class="delete-item"></td>
+						<td><img src="img/basket-icescream-2.png" width="33" height="33"></td>
+						<td><a href="#">Клубничный пломбир с присыпкой из белого шоколада</a></td>
+						<td>1,5 кг x <span>300 руб.</span></td>
+						<td>450 руб.</td>
+					</tr>
+				</table>
+				<span class="basket-final-price">Итого: 750 руб.</span>
+				<input type="submit" class="basket-window-btn" value="Оформить заказ">
+			</form>
+		</div>
  	</body>
  </html>

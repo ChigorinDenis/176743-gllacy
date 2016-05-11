@@ -7,19 +7,49 @@
 		<link href='https://fonts.googleapis.com/css?family=Roboto:400,500,700&subset=cyrillic' rel='stylesheet' type='text/css'>
 	</head>
 	<body>
+			<input type="radio" id="sl-btn1" name="toggle" checked>
+		 	<input type="radio" id="sl-btn2" name="toggle">
+		 	<input type="radio" id="sl-btn3" name="toggle">	
 		<div class="page-border">
+				<div class="slider-controls ">
+					<label for="sl-btn1" >1</label>
+					<label for="sl-btn2">2</label>
+					<label for="sl-btn3">3</label>
+				</div>
+
+
+			
+		 			<div class="slider-object slider1">
+		 			<div class="slide-title" >Крем-брюле и пломбир
+							с малиновым джемом
+						</div> 
+						<a href="#">Давайте оба!</a>
+					</div>
+					<div class="slider-object slider2">
+						<div class="slide-title">Шоколадный пломбир и
+							лимонный сорбет
+						</div>
+						<a href="#">Давайте оба!</a>
+					</div>
+					<div class="slider-object slider3">
+						<div class="slide-title">Пломбир с помадкой и
+							клубничный щербет
+						</div>
+						<a href="#">Давайте оба!</a>
+					</div> 			
+
 		<a href="#"><img src="img/Logo.png" class="logo" width="154" height="64"></a> 
 		 <div class="main-container ">
 			<header class="main-header clearfix ">
 				<nav class="main-navigation">
 					<ul>
-						<li>
-							<a href="catalog.html">Каталог</a>
+						<li class="nav-catalog">
+							<a  href="catalog.html">Каталог</a>
 						</li>
-						<li>
+						<li class="nav-delivery">
 							<a href="#">Доставка и оплата</a>
 						</li>
-						<li>
+						<li class="nav-company">
 							<a href="#">О Компании</a>
 						</li>
 					</ul>  
@@ -41,11 +71,11 @@
 				<h1>Крем-брюле и пломбир<span class="correct">
 				    с малиновым джемом</span>
 				</h1> 
-				<div class="slider ">
-					<a href="#" class="slider-active">1</a>
-					<a href="#">2</a>
-					<a href="#">3</a>
-				</div>
+
+					
+				
+				
+				
 				<div class="two-ice-scream-btn ">
 					<a href="#">Давайте оба!</a>			
 				</div>			
@@ -72,28 +102,34 @@
 					<figure>
 						<img src="img/icescream-1.png" alt="Сливочное с апельсиновым джемом" width="267" height="267">
 						<figcaption><a href="#" class="hits-underline">Сливочное с апельсиновым <span>джемом и цитрусовой стружкой</span></a></figcaption>
-					</figure>	
+					</figure>
+				<!--<div class="invisible-bgd">	
+					<a class="invisible-btn" href="#">Быстрый просмотр</a>
+					</div>-->
 				</article>
 				<article class="hits-ice-scream">  <!-- Нумерация классов убрана -->
 					<span class="ice-price">380 &#8381;<span class="sub-class">/кг</span></span>
 					<figure>
 						<img src="img/icescream-2.png" alt="Сливочно-кофейное" width="267" height="267">
 						<figcaption><a href="#" class="hits-underline">Сливочно-кофейное с кусочками<span> шоколада</span></a></figcaption>
-					</figure>	
+					</figure>
+						
 				</article>
 				<article class="hits-ice-scream">
 					<span class="ice-price">355 &#8381;<span class="sub-class">/кг</span></span>
 					<figure>
 						<img src="img/icescream-3.png" alt="Сливочно-клубничное" width="267" height="267">
 						<figcaption><a href="#" class="hits-underline">Сливочно-клубничное с <span>присыпкой из белого шоколада</span></a></figcaption>
-					</figure>	
+					</figure>
+					
 				</article>
 				<article class="hits-ice-scream hits-right">
 					<span class="ice-price">415 &#8381;<span class="sub-class">/кг</span></span>
 					<figure>
 						<img src="img/icescream-4.png" alt="Сливочное с крем-брюле" width="267" height="267">
 						<figcaption><a href="#" class="hits-underline">Сливочное с крем-брюле <span>с карамельной подливкой</span></a></figcaption>
-					</figure>	
+					</figure>
+						
 				</article>
 			</div>	
 				<section class="about-us">
@@ -156,6 +192,32 @@
 				</span>
 			</div>
 			</div>
+			
+				<ul class="main-menu">
+					<li><a class="menu-bold" href="#">Новинки</a></li>
+					<li><a href="#">Сливочное</a></li>
+					<li><a href="#">Щербеты</a></li>
+					<li><a href="#">Фруктовый лед</a></li>
+					<li><a href="#">Мелорин</a></li>
+				</ul>
+			<div class="search-line"> 
+				<input class="search-line-text" type="text" placeholder="Что ищем?">
+			</div>
+			<div class="feedback-shadow">
+				<div class="feedback clearfix">
+					<form action="URL">
+						<span>Мы обязательно вам ответим!</span>
+						<input class="feedback-text" type="text" placeholder="Как вас зовут?">
+						<input class="feedback-text" type="text" placeholder="Ваша почта для ответа?">
+						<input  class="feedback-textarea" type="textarea" placeholder="Напишите что-нибудь...">
+						<input class="feedback-btn" type="submit" value="Отправить">
+						
+					</form>
+					<div class="feedback-close">
+					</div>
+				</div>
+			</div>
+
 				<div class="map clearfix">
 					<section class="map-contact ">
 						<p class="map-top">Адрес главного офиса и<br>
@@ -185,8 +247,8 @@
 			</section>
 			
 				<ul class="doc-left">
-					<li><a href="#">Для поставщиков</a></li>
-					<li><a href="#">О произодстве</a></li>
+					<li><a class="doc-left-bold" href="#">Для поставщиков</a></li>
+					<li><a class="doc-left-normal" href="#">О произодстве</a></li>
 				</ul>
 				<ul class="doc-right">
 					<li><a href="#">Наши документы</a></li>
@@ -197,6 +259,6 @@
 				<p>Сделано в <a href="#">HTML Academy</a> &copy; 2016</p> 
 			</section>
 		</footer>
-		<div>
+		</div>
   	</body>
 </html>
