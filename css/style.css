@@ -39,8 +39,6 @@ h2 {
 }
 
 body {
-   	background:  url("../img/gllacy-catalog-11200.jpg") no-repeat ; 
-	background-position: 50% 0;
     padding:0;
     margin:0;
 }
@@ -324,8 +322,6 @@ body {
 .two-ice-scream {
 	position: relative;
 	width:1146px;
-	background-image:url("../img/icescream-bgd-11.png");
-	background-repeat:no-repeat;
 	background-position: 50% 10px;
 	padding-top: 320px;
 }
@@ -756,12 +752,18 @@ figcaption a:hover{
 	margin-bottom: 0;
 }
 .map-contact{
+	position: relative;
 	width:302px;
 	float:right;
 	margin-right: 27px;
 	margin-top: 64px;
 	background:#fefefe; 
 	border-radius: 15px;
+	z-index: 10;
+}
+.map-iframe{
+	position: absolute;
+	z-index: 9;
 }
 
 .map-contact p {
@@ -1696,7 +1698,7 @@ background: #f6b5a5;
 .feedback {
 	position: fixed;
 	width: 427px;
-	top:400px;
+	top:200px;
 	left:50%;
 	margin-left:-213px;
 	padding-left: 25px;
@@ -1770,6 +1772,10 @@ background: #f6b5a5;
 	z-index: 30;
 	display:none; ;
 }
+.feedback-shadow-show{
+	display: block;
+}
+
 .feedback-close{
 	cursor: pointer;
 	position: absolute;
@@ -1995,4 +2001,17 @@ tr td:nth-child(5){
 	background-image: linear-gradient(to top,#f16743,#e44a35);
 	box-shadow: none;
 	box-shadow:inset 0 2px 2px 0 #ac1000;
+}
+
+
+@keyframes open-window{
+	40%{transform: scale(0.6);}
+	75%{transform: scale(1.5);}
+	80%{transform: scale(1.3);}
+	100%{transform: scale(1);}
+}
+.feedback-animation{
+	animation-name: open-window;
+	animation-duration: 1s;
+	animation-fill-mode: backwards;
 }
