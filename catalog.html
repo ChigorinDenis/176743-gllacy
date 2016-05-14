@@ -3,15 +3,15 @@
  	<head>
     	<meta charset="utf-8">
     	<title>HTML Academy: HTML Academy: Глейси каталог</title>
-    	<link href="css/style.css" rel="stylesheet">
-    	<link href='https://fonts.googleapis.com/css?family=Roboto:400,500,700&subset=cyrillic' rel='stylesheet' type='text/css'>
+    	<link href="css/normalize.css" rel="stylesheet">
+    	<link href="css/minstyle.css" rel="stylesheet">
+    	<link href='https://fonts.googleapis.com/css?family=Roboto:400,500,700,900&subset=cyrillic' rel='stylesheet' type='text/css'>
  	</head>
   	<body>
   		<div class="page-border">
-  		<a href="index.html" class="logo"><img src="img/Logo.png"  width="154" height="64"></a> 
+  		<a href="index.html" class="logo"><img src="img/Logo.png"  width="154" height="64" alt="Глейси"></a> 
   		<div class="main-container">
 			<header class="main-header clearfix">
-				
 				<nav class="main-navigation">
 					<ul class="nav-ul">
 						<li class="nav-li">
@@ -34,14 +34,14 @@
 							<table class="basket-table">
 								<tr>
 									<td class="delete-item"></td>
-									<td><img src="img/basket-icescream-1.png" width="33" height="33"></td>
+									<td><img src="img/basket-icescream-1.png" width="33" height="33" alt="мороженное1"></td>
 									<td><a href="#">Пломбир с апельсиновым джемом</a></td>
 									<td>1,5 кг x <span>200 руб.</span></td>
 									<td>300 руб.</td>
 								</tr>
 								<tr>
 									<td class="delete-item"></td>
-									<td><img src="img/basket-icescream-2.png" width="33" height="33"></td>
+									<td><img src="img/basket-icescream-2.png" width="33" height="33" alt="мороженное1"></td>
 									<td><a href="#">Клубничный пломбир с присыпкой из белого шоколада</a></td>
 									<td>1,5 кг x <span>300 руб.</span></td>
 									<td>450 руб.</td>
@@ -82,14 +82,14 @@
 					<span class="filter-lb  filter-lb-price">Цена:100руб.- 500руб.</span>
 					<span class="filter-lb  filter-lb-fatness">Жирность:</span>
 				</div>	
-						<div class="filter-sorting">               
+					<div class="filter-sorting">               
 						<select name="sorting" > 
  							<option value="1">по популярности</option>
  							<option value="2">сначала недорогие</option>
  							<option value="3">сначала дорогие</option>
  							<option value="4">по жирности</option>
  						</select> 
-						</div>	
+					</div>	
 					<div class="filter-price">
 						<div class="scale">
 							<div class="scale-bar">
@@ -166,144 +166,127 @@
 									джемы
 								</label>
 							</li>
-						</ul>
-						  
+						</ul>	  
 					</div>
-					<button type="submit" class="filter-btn">Применить</button>             <!--Замена на button-->
+					<button type="submit" class="filter-btn">Применить</button>            
 				</form>
 			</section>
 			<div class="item-block">
-				<article class="item-ice-scream">  <!--Нумерация элементов убрана -->
-					
+				<article class="item-ice-scream">  	
 					<figure>
 					<span class="item-price">310 &#8381;<span class="sub-class">/кг</span></span>
-						<img src="img/icescream-1.png">
+						<img src="img/icescream-1.png" alt="Сливочное с апельсиновым джемом">
 						<figcaption><a href="#" class="hits-underline">Сливочное с апельсиновым джемом и цитрусовой стружкой</a></figcaption>
 
 						<div class="invisible-bgd">	
 						<a class="invisible-btn" href="#">Быстрый просмотр</a>
 						</div>
-					</figure>	
-
-					
+					</figure>			
 				</article>
-				<article class="item-ice-scream">
-					         <!--мурдеж со sup исправлен) -->
+				<article class="item-ice-scream">		        
 					<figure>
 					<span class="item-price">380 &#8381;<span class="sub-class">/кг</span></span>   
-						<img src="img/icescream-2.png">
+						<img src="img/icescream-2.png" alt="Сливочно-кофейное ">
 						<figcaption><a href="#" class="hits-underline">Сливочно-кофейное с кусочками шоколада</a></figcaption>
 						<div class="invisible-bgd">	
 						<a class="invisible-btn" href="#">Быстрый просмотр</a>
 						</div>
 				</figure>	
 				</article>
-				<article class="item-ice-scream">
-					
+				<article class="item-ice-scream">		
 					<figure>
 					<span class="item-price">355 &#8381;<span class="sub-class">/кг</span></span>
-						<img src="img/icescream-3.png">
+						<img src="img/icescream-3.png" alt="Сливочно-клубничное">
 						<figcaption><a href="#" class="hits-underline">Сливочно-клубничное с присыпкой из белого шоколада</a></figcaption>
 						<div class="invisible-bgd">	
 						<a class="invisible-btn" href="#">Быстрый просмотр</a>
 						</div>
 					</figure>	
 				</article>
-				<article class="item-ice-scream">
-					
+				<article class="item-ice-scream">	
 					<figure>
 					<span class="item-price">415 &#8381;<span class="sub-class">/кг</span></span>
-						<img src="img/icescream-4.png">
+						<img src="img/icescream-4.png" alt="Сливочное с крем-брюле">
 						<figcaption><a href="#" class="hits-underline">Сливочное с крем-брюле с карамельной подливкой</a></figcaption>
 						<div class="invisible-bgd">	
 						<a class="invisible-btn" href="#">Быстрый просмотр</a>
 						</div>
 					</figure>	
 				</article>
-
 				<article class="item-ice-scream">
-					
 					<figure>
 					<span class="item-price">325 &#8381;<span class="sub-class">/кг</span></span>
-						<img src="img/icescream-21.png">
+						<img src="img/icescream-21.png" alt="Сливочное с брусничным ">
 						<figcaption><a href="#" class="hits-underline">Сливочное с брусничным <br>джемом</a></figcaption>
 						<div class="invisible-bgd">	
 						<a class="invisible-btn" href="#">Быстрый просмотр</a>
 						</div>
 					</figure>	
 				</article>
-				<article class="item-ice-scream">
-					
+				<article class="item-ice-scream">	
 					<figure>
 					<span class="item-price">410 &#8381;<span class="sub-class">/кг</span></span>
-						<img src="img/icescream-22.png">
+						<img src="img/icescream-22.png" alt="Сливочно-черничное">
 						<figcaption><a href="#" class="hits-underline">Сливочно-черничное с цельными ягодами черники</a></figcaption>
 						<div class="invisible-bgd">	
 						<a class="invisible-btn" href="#">Быстрый просмотр</a>
 						</div>
 					</figure>	
 				</article>
-				<article class="item-ice-scream">
-					
+				<article class="item-ice-scream">	
 					<figure>
 					<span class="item-price">375 &#8381;<span class="sub-class">/кг</span></span>
-						<img src="img/icescream-23.png">
+						<img src="img/icescream-23.png" alt="Сливочно-лимонное">
 						<figcaption><a href="#" class="hits-underline">Сливочно-лимонное с карамельной присыпкой</a></figcaption>
 						<div class="invisible-bgd">	
 						<a class="invisible-btn" href="#">Быстрый просмотр</a>
 						</div>
 					</figure>	
 				</article>
-				<article class=" item-ice-scream">
-					
+				<article class=" item-ice-scream">	
 					<figure>
 					<span class="item-price">320 &#8381;<span class="sub-class">/кг</span></span>
-						<img src="img/icescream-24.png">
+						<img src="img/icescream-24.png" alt="Сливочное с шоколадной стружкой">
 						<figcaption><a href="#" class="hits-underline">Сливочное с шоколадной стружкой</a></figcaption>
 						<div class="invisible-bgd">	
 						<a class="invisible-btn" href="#">Быстрый просмотр</a>
 						</div>
 					</figure>	
 				</article>
-
-				<article class="item-ice-scream">
-					
+				<article class="item-ice-scream">	
 					<figure>
 					<span class="item-price">440 &#8381;<span class="sub-class">/кг</span></span>
-						<img src="img/icescream-31.png">
+						<img src="img/icescream-31.png" alt="Сливочно-ванильное">
 						<figcaption><a href="#" class="hits-underline">Сливочно-ванильное с <br>кусочками шоколада</a></figcaption>
 						<div class="invisible-bgd">	
 						<a class="invisible-btn" href="#">Быстрый просмотр</a>
 						</div>
 					</figure>	
 				</article>
-				<article class="item-ice-scream">
-					
+				<article class="item-ice-scream">	
 					<figure>
 					<span class="item-price">435 &#8381;<span class="sub-class">/кг</span></span>
-						<img src="img/icescream-32.png">
+						<img src="img/icescream-32.png" alt="Сливочное с ментоловым">
 						<figcaption><a href="#" class="hits-underline">Сливочное с ментоловым<br>сиропом</a></figcaption>
 						<div class="invisible-bgd">	
 						<a class="invisible-btn" href="#">Быстрый просмотр</a>
 						</div>
 					</figure>	
 				</article>
-				<article class="item-ice-scream">
-					
+				<article class="item-ice-scream">		
 					<figure>
 					<span class="item-price">355 &#8381;<span class="sub-class">/кг</span></span>
-						<img src="img/icescream-33.png">
+						<img src="img/icescream-33.png" alt="Сливочное с кусочками черного шоколада">
 						<figcaption><a href="#" class="hits-underline">Сливочное с кусочками черного шоколада</a></figcaption>
 						<div class="invisible-bgd">	
 						<a class="invisible-btn" href="#">Быстрый просмотр</a>
 						</div>
 					</figure>	
 				</article>
-				<article class="item-ice-scream">
-					
+				<article class="item-ice-scream">		
 					<figure>
 					<span class="item-price">420 &#8381;<span class="sub-class">/кг</span></span>
-						<img src="img/icescream-34.png">
+						<img src="img/icescream-34.png" alt="Сливочное с мятным сиропом">
 						<figcaption ><a href="#" class="hits-underline">Сливочное с мятным сиропом</a></figcaption>
 						<div class="invisible-bgd">	
 						<a class="invisible-btn" href="#">Быстрый просмотр</a>
@@ -321,9 +304,7 @@
 	            <span class="next"></span>
        		</div>
        		</div>
-
 		</main>
-		
 		<footer class="main-footer footer-line clearfix">
 			<section class="footer-social">
 				<a class="social-btn social-btn-tw" href="#">Тв</a>
@@ -345,6 +326,6 @@
 				<p>Сделано в <a href="#">HTML Academy</a> &copy; 2016</p>  
 			</section>
 		</footer>	
-		
+	</div>	
  	</body>
  </html>
